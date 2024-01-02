@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Admin Management</title>
+    <link rel="stylesheet" href="ecommerce.css">    
+</head>
+<body>
+    <div class="header">
+        <div class="site-name">
+          <h1> E-Commerce Management</h1>
+        </div>
+
+        <div class="input-div">
+    <div class="inputs">
+        <label for="price">Product Price:</label>
+        <input type="number" id="price" required>
+    </div>
+    <div class="inputs">
+        <label for="product">Product Name:</label>
+        <input type="text" id="product" required>
+    </div>
+    <div class="inputs">
+        <label for="category">Category:</label>
+        <select id="category" required>
+            <option value="1">Electronics</option>
+            <option value="2">SkinCare</option>
+            <option value="3">Food and Groceries</option>
+        </select>
+    </div> 
+   
+    
+    <div class="submit-button-div">
+        <button onclick="submitOrder()" class="submit-button">Add Product</button>
+    </div>
+
+    </div>
+
+    <div class="order-lists">
+    <div class="list">
+        <h2>Electronics</h2>
+        <ul id="type-1-list"></ul>
+    </div>
+    <div class="list">
+        <h2>SkinCare</h2>
+        <ul id="type-2-list"></ul>
+    </div>
+    <div class="list">
+        <h2>Food and Groceries</h2>
+        <ul id="type-3-list"></ul>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.3/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+.delete-buttons{
+    background-color: red;
+    color:black;
+    border-radius: 5px;
+}
+body{
+
+    background-image: url(bgimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.site-name{
+    text-align: center;    
+    color: rgb(238, 18, 77);
+    font-size: 20px;
+    font-weight: bolder;
+    font-family:'Times New Roman', Times, serif;   
+    text-align: center;   
+    animation: glow 1s ease-in-out infinite alternate;       
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 5px #ef709c, 0 0 60px #e60073, 0 0 70px #e60073;
+    }    
+    to {
+      text-shadow: 0 0 10px #ec77b3, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+.order-lists{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    
+}
+.list{
+    flex: 1;
+    background-color: rgb(245, 70, 140, 0.5);
+    width: 500px;
+    padding-top: 30px;
+    padding-bottom: 200px;
+    border-right: solid 2px rgb(255, 253, 253);
+    border-left: solid 2px rgb(255, 253, 253);
+    border-top: solid 2px rgb(255, 253, 253);
+    border-bottom: solid 2px rgb(255, 253, 253);
+    border-radius: 5px;
+    text-align: center;   
+    text-decoration: underline;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;    
+}
+.input-div{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.inputs{
+    flex:1;
+}
+.submit-button-div{
+    text-align: center;
+}
+.submit-button{
+    color: black;
+    background-color:rgb(238, 18, 77);
+    border-radius: 5px;
+    padding: 6px;
+}
+ul {
+    list-style: none;
+  }
+
+  .delete-buttons {
+    margin-left: 10px;
+    cursor: pointer;
+}
